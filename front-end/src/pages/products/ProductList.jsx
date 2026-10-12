@@ -66,6 +66,7 @@ const ProductList = () => {
       <h2 className="mb-4">Tất cả sản phẩm</h2>
 
       <ProductFilters
+        products={products}
         category={category}
         priceFilter={priceFilter}
         sort={sort}
