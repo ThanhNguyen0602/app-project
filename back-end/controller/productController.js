@@ -2,17 +2,16 @@ const Product = require('../model/productModel');
 const AppError = require('../utils/AppError')
 
 // GET /api/products
-const index = async (req,res) =>{
+const index = async (req,res,next) =>{
     try {
       const products = await Product.getAll();
-      if (!products) {
-        throw new AppError("Cannot load product list", 500);
+      
 
         return res.status(200).json({
           data: products,
           message: "Get product list successfully",
         });
-      }
+      
     } catch (error) {
         next(error);
     }
