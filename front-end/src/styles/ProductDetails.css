@@ -1,0 +1,278 @@
+.product-details-page {
+  color: #171717;
+}
+
+/* BREADCRUMB */
+
+.product-breadcrumb {
+  margin-bottom: 28px;
+  font-size: 13px;
+}
+
+.product-breadcrumb a {
+  color: #666;
+  text-decoration: none;
+}
+
+.product-breadcrumb a:hover {
+  color: #111;
+}
+
+/* GALLERY */
+
+.product-main-image {
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  overflow: hidden;
+  background: #f5f5f5;
+  border-radius: 4px;
+}
+
+.product-main-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.product-no-image {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #777;
+}
+
+.product-thumbnails {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 14px;
+}
+
+.product-thumbnails .thumbnail {
+  width: 78px;
+  height: 94px;
+  padding: 0;
+  border: 1px solid #ddd;
+  background: #fff;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.product-thumbnails .thumbnail.active,
+.product-thumbnails .thumbnail:hover {
+  border: 2px solid #111;
+}
+
+.product-thumbnails img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* PRODUCT INFORMATION */
+
+.product-info {
+  padding-top: 4px;
+}
+
+.product-category {
+  color: #777;
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+
+.product-title {
+  font-size: 27px;
+  font-weight: 700;
+  line-height: 1.4;
+  margin-bottom: 12px;
+}
+
+.product-sku {
+  font-size: 13px;
+  color: #888;
+}
+
+.product-stock-status {
+  margin: 15px 0;
+}
+
+/* PRICE */
+
+.product-price {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin: 22px 0;
+}
+
+.current-price {
+  font-size: 27px;
+  font-weight: 700;
+  color: #d62828;
+}
+
+.old-price {
+  font-size: 17px;
+  color: #999;
+  text-decoration: line-through;
+}
+
+.product-short-description {
+  color: #555;
+  line-height: 1.8;
+  white-space: pre-line;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #eee;
+}
+
+/* COLOR & SIZE */
+
+.product-option {
+  margin-top: 24px;
+}
+
+.product-option h6 {
+  font-size: 14px;
+  font-weight: 700;
+  margin-bottom: 13px;
+}
+
+.product-option h6 span {
+  font-weight: 400;
+  color: #666;
+}
+
+.option-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.option-buttons .btn {
+  min-width: 52px;
+  border-radius: 3px;
+  font-size: 13px;
+  padding: 9px 16px;
+}
+
+.variant-stock {
+  font-size: 13px;
+  color: #666;
+  margin-top: 14px;
+}
+
+/* QUANTITY */
+
+.quantity-control {
+  display: flex;
+  width: 160px;
+  height: 44px;
+}
+
+.quantity-control .btn {
+  width: 44px;
+  border-radius: 0;
+}
+
+.quantity-control .form-control {
+  width: 72px;
+  text-align: center;
+  border-radius: 0;
+  border-left: 0;
+  border-right: 0;
+  box-shadow: none;
+}
+
+.quantity-control input::-webkit-inner-spin-button,
+.quantity-control input::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* CART BUTTON */
+
+.add-to-cart-btn {
+  width: 100%;
+  padding: 15px;
+  margin-top: 28px;
+  border-radius: 3px;
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  transition: 0.2s;
+}
+
+.add-to-cart-btn:hover {
+  background: #333;
+}
+
+.product-extra-info {
+  margin-top: 24px;
+  padding: 20px;
+  background: #f8f8f8;
+  font-size: 13px;
+  color: #555;
+}
+
+.product-extra-info p {
+  margin-bottom: 10px;
+}
+
+.product-extra-info p:last-child {
+  margin-bottom: 0;
+}
+
+/* DESCRIPTION TABS */
+
+.product-description-section {
+  margin-top: 75px;
+  padding-top: 30px;
+  border-top: 1px solid #eee;
+}
+
+.product-tabs .nav-link {
+  color: #666;
+  font-weight: 600;
+  border: none;
+  border-bottom: 2px solid transparent;
+  border-radius: 0;
+}
+
+.product-tabs .nav-link.active {
+  color: #111;
+  border-bottom: 2px solid #111;
+}
+
+.product-description-section .tab-content {
+  padding: 18px 0;
+  color: #555;
+  line-height: 1.9;
+  white-space: pre-line;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 768px) {
+  .product-title {
+    font-size: 22px;
+  }
+
+  .current-price {
+    font-size: 23px;
+  }
+
+  .product-thumbnails .thumbnail {
+    width: 65px;
+    height: 80px;
+  }
+
+  .product-description-section {
+    margin-top: 45px;
+  }
+}
