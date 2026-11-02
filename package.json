@@ -1,0 +1,17 @@
+{
+  "name": "tv-studio-shop",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "workspaces": ["front-end", "Back-end"],
+  "engines": { "node": ">=22.12.0" },
+  "scripts": {
+    "dev": "node scripts/dev.mjs",
+    "build": "npm run build --workspace front-end",
+    "lint": "npm run lint --workspace front-end",
+    "start": "npm run start --workspace Back-end",
+    "db:init": "npm run db:init --workspace Back-end",
+    "test": "npm run test --workspace Back-end",
+    "test:integration": "npm run test:integration --workspace Back-end"
+  }
+}

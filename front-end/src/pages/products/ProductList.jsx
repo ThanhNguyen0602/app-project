@@ -5,7 +5,7 @@ import { Container } from "react-bootstrap";
 import ProductFilters from "../products/ProductFilter";
 import ProductResults from "../products/Productresult";
 
-import { products } from "../products/dataProducts";
+
 import { filterProducts, sortProducts } from "../../utils/productUtils";
 
 const ProductList = () => {
